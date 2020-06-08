@@ -10,7 +10,19 @@
 <body>
 
     <div>
-        <img src="img/uras.gif" alt="裏">
+        <img id="mypic" onclick="slideshow()" src="img/uras.gif" alt="裏1">
+            <script>
+                var img_src = new Array("img/man1s.gif");
+                var num = 0;
+
+                function slideshow() {
+                    if (num == 1) {
+                    num ++;
+                    }
+                document.getElementById("mypic").src=img_src[num];
+                }
+            </script>
+
         <img src="img/uras.gif" alt="裏">
         <img src="img/uras.gif" alt="裏">
         <img src="img/uras.gif" alt="裏">
